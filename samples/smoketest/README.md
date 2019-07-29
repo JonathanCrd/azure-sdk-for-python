@@ -41,7 +41,7 @@ The following environment variables are needed:
   * COSMOS_KEY: Primary or secondary key.
 
 ```
-//Bash code to create the environment variables
+# Bash code to create the environment variables
 export AZURE_CLIENT_ID=""
 export AZURE_CLIENT_SECRET=""
 export AZURE_TENANT_ID=""
@@ -118,7 +118,7 @@ def SendAndReceiveEvents(self, partitionID, events):
 Be sure to set the environment variables and credentials required before running the sample.
 
 ### ImportError
-`ImportError: cannot import name 'AsyncPipelineClient' from 'azure.core'`.
+`ImportError: cannot import name 'AsyncPipelineClient' from 'azure.core'`
 
 The libraries in the `requiriments_async.txt` are not installed and the python version used has async capabilities. Install the libraries using pip.
 
