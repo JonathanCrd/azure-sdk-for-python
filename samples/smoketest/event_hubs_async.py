@@ -10,7 +10,9 @@ class EventHub_async:
         # In this example the name is "myeventhub", but it could be change below
         connection_string = os.environ["EVENT_HUBS_CONNECTION_STRING"]
         event_hub_name = "myeventhub"
-        self.client = EventHubClient.from_connection_string(connection_string, event_hub_name)
+        self.client = EventHubClient.from_connection_string(
+            connection_string, event_hub_name
+        )
 
     async def Getpartition_ids(self):
         print("Getting partitions id...")
@@ -26,7 +28,9 @@ class EventHub_async:
         ) as consumer:
 
             print("Sending events...")
-            async with self.client.create_producer(partition_id=partition_id) as producer:
+            async with self.client.create_producer(
+                partition_id=partition_id
+            ) as producer:
                 event_list = [
                     EventData(b"Test Event 1 in Python"),
                     EventData(b"Test Event 2 in Python"),
