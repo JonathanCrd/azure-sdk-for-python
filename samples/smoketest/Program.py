@@ -1,4 +1,5 @@
 import smoke_test
+
 try:
     import smoke_test_async
 except SyntaxError:

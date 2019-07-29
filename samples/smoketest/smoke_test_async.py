@@ -6,8 +6,10 @@ print("==========================================")
 print("   AZURE TRACK 2 SDKs SMOKE TEST ASYNC")
 print("==========================================")
 
+
 async def main():
     await KeyVault_async().Run()
+
 
 loop = asyncio.get_event_loop()
 
