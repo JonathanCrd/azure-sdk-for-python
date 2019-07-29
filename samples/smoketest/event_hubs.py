@@ -51,14 +51,14 @@ class EventHub:
                 )
 
     def Run(self):
-        print()
+        print("")
         print("------------------------")
         print("Event Hubs")
         print("------------------------")
         print("1) Get partition ID")
         print("2) Send Events")
         print("3) Consume Events")
-        print()
+        print("")
 
         partitionID = self.GetPartitionIds()
         # In this sample the same partition id is going to be used for the producer and consumer,
